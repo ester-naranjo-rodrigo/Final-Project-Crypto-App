@@ -33,3 +33,6 @@ Users can access and manage easily their investments, the app store and update a
 Users can see
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
+
+
+![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/exchange.PNG)
