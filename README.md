@@ -20,7 +20,7 @@ You can access to historic values choosing the period you want and displaying it
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/historic.PNG)
 
 ## Log In 
-Users can access to their account or create an account if they have not any. Only logged users can use Portfolio options:
+Users can access to their account or create an account if they have not any. Only logged in users can use Portfolio options:
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/logIn.PNG)
 
