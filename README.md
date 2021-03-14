@@ -20,10 +20,11 @@ You can access to historic values choosing the period you want and displaying it
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/historic.PNG)
 
 ## Log In 
-Users can access to their account or create their an account if they have not any:
+Users can access to their account or create an account if they have not any:
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/logIn.PNG)
 
-
+## Portfolio
+Users can admin their investments easily with 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfolio.PNG)
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
