@@ -25,12 +25,12 @@ Users can access to their account or create an account if they have not any:
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/logIn.PNG)
 
 ## Portfolio
-Users can access and manage easily their investments, the app store and update all inverstment and user data in real time (MySQL database connection):
+Users can access, manage and add easily their investments, the app store and update all inverstment and user data in real time (MySQL database connection):
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfolio.PNG)
 
 ## Detailed Investments charts
-Users can see
+Users can obtain all the investment detailed by cryptocurrency and represented in a chart where they can zoom and display diary data inspecting the chart.
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
 
