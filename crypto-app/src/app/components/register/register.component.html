@@ -1,0 +1,18 @@
+<main class="mt-5 pt-5">
+    <div class="border border-dark p-3">
+    <h2>Crypto-App Register 🔑</h2>
+    <input placeholder="Introduce your name" [(ngModel)]="name" (click)="getUsers()">
+    <input placeholder="Introduce your username" [(ngModel)]="username">
+    <input placeholder="Introduce your password" [(ngModel)]="password">
+    <input placeholder="Introduce your country" [(ngModel)]="country">
+    <button class="btn btn-dark my-3" (click)="register()">Create new account</button>
+</div>
+<div *ngIf="flag === false" class="alert alert-danger" role="alert">
+<p>This username is in use or there are some empty inputs, please try again</p>
+</div>
+<div *ngIf="flag2 === true" class="alert alert-success" role="alert">
+<p>Account created successfully!!</p>
+<button class="btn btn-dark my-3" (click)="goToLogIn()">Go to Log In</button>
+</div>
+</main>
+

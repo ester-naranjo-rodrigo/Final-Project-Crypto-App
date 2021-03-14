@@ -1,0 +1,26 @@
+<main>
+  <h3 class="my-5">Today's Cryptocurrency Prices</h3>
+<table class="table table-light table-striped" style="width:55% ; text-align: center;">
+  <thead class="table-dark"> 
+  <tr>
+    <th>Icon</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Symbol</th>
+    </tr>
+  </thead> 
+  <tbody>
+    <tr *ngFor="let currency of currenciesList" [routerLink]="['/historical/', currency.symbol]">
+        <td>
+          <img src='../../../assets/img/BTCUSD.png'>
+        </td>
+            <td>
+              {{currency.name}}
+            </td>
+        
+        <td>{{currency.price}}</td>
+        <td><span class="badge bg-secondary">{{currency.symbol}}</span></td>
+    </tr>
+  </tbody>
+</table>
+</main>

@@ -1,0 +1,8 @@
+<p>portfolio-investment-details works!</p>
+<input [(ngModel)]="quantity">
+<select [(ngModel)]="coin">
+    <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
+</select>
+<input type="date" [(ngModel)]="dateInvestment">
+<button (click)="updateInvestment(quantity, coin, dateInvestment)">Edit</button>
+<button (click)="goBack()">Go back</button>

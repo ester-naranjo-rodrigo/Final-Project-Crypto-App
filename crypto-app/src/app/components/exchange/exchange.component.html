@@ -1,0 +1,35 @@
+<main class="mt-2 pt-2">
+    <div class="caja border border-dark p-3 shadow-sm">
+        <h3>Convert to dollars 💲</h3>
+        <section>
+<input placeholder="Introduce quantity" [(ngModel)]="quantity">
+<select class="form-select" [(ngModel)]="coin">
+    <option disabled value="">Select coin</option>
+    <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
+</select>
+        </section>
+<section>
+<button class="btn btn-dark my-3" (click)="convert(quantity, coin)">Convert to USD</button>
+<button class="btn btn-dark my-3" (click)="clear()">Clear</button>
+</section>
+<div *ngIf="flag===true"><span class="badge rounded-pill bg-success">{{result1}} $ </span></div>
+</div>
+</main>
+
+<main class="mt-2 pt-2">
+    <div class="caja border border-dark p-3">
+        <h3>Convert dollars to...💸</h3>
+        <section>
+<input placeholder="Introduce quantity" [(ngModel)]="quantity2">
+<select class="form-select" [(ngModel)]="coin2">
+    <option disabled value="">Select coin</option>
+    <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
+</select>
+        </section>
+<section>
+<button class="btn btn-dark my-3" (click)="convert2(quantity2, coin2)">Convert to ...</button>
+<button class="btn btn-dark my-3" (click)="clear2()">Clear</button>
+</section>
+<div *ngIf="flag2===true"><span class="badge rounded-pill bg-success">{{result2}} {{coin2}}</span></div>
+</div>
+</main>

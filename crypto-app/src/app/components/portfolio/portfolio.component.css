@@ -1,0 +1,29 @@
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+span{
+    font-size: 17px;
+    
+}
+
+h4, h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+}

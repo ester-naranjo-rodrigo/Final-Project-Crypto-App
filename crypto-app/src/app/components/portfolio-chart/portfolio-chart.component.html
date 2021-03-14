@@ -1,0 +1,11 @@
+<p>portfolio-chart works!</p>
+<p>{{user.id}} - {{user.name}} - {{user.username}} - {{user.password}} - {{user.country}} </p>
+
+<div *ngFor="let investment of investmentsdef">
+    <p>{{investment.id}} - {{investment.quantity}} - {{investment.coin}} - {{investment.dateInvestment}}</p>
+</div>
+<button (click)="goBack()">Go back</button>
+
+<highcharts-chart id="container" style="width: 100%; display: block"
+	[Highcharts]="Highcharts">
+</highcharts-chart>

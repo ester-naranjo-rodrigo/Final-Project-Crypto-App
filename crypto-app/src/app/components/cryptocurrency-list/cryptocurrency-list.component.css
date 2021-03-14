@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+td {
+    cursor: pointer;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
