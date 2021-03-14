@@ -11,6 +11,7 @@ import { FinancialModelingPrepService } from 'src/app/services/financial-modelin
 export class CryptocurrencyListComponent implements OnInit {
 
   currenciesSymbolList: string[] = ['BTCUSD', 'ETHUSD', 'ADAUSD', 'XRPUSD', 'XLMUSD', 'DOGEUSD', 'TRXUSD', 'USDTUSD', 'BNBUSD', 'LTCUSD', 'EOSUSD', 'CVCUSD'];
+  currenciesImgPath: string [] = [];
   currenciesList: CurrencyQuote[] = [<CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{},
     <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}, <CurrencyQuote>{}];
 
@@ -21,6 +22,7 @@ export class CryptocurrencyListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCurrencyList();
+    this.imgPath();
   }
 
   getCurrencyList(): void {
@@ -66,6 +68,12 @@ export class CryptocurrencyListComponent implements OnInit {
         }
       }
     })
+  }
+
+  imgPath(): void{
+    for(let i =0; i<this.currenciesSymbolList.length; i++){
+      this.currenciesImgPath.push('../../../assets/img/'+this.currenciesSymbolList[i]+'.png');
+    }
   }
 
 }
