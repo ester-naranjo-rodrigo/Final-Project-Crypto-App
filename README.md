@@ -10,7 +10,7 @@ This project is a web application where users can access to the following funcio
     - Profile where users can store and see their investments
     - Detailed charts of each cryptocurrency investment along time
 ## Cryptocurrency values in Real Time 
-[Financial Modeling Prep API](https://financialmodelingprep.com/developer/docs/) is the public API used to obtain historic and current cryptocurrency values. The current cryptocurrency values are dispayed in "Home":
+For this first version of the project, I have chosen 12 cryptocurrencies but future versions will increase the number of cryptocurrencies analized. [Financial Modeling Prep API](https://financialmodelingprep.com/developer/docs/) is the public API used to obtain historic and current cryptocurrency values. The current cryptocurrency values are dispayed in "Home":
 
 ## Historic set of values  
 You can access to historic values choosing the period you want and displaying it in a candlestick chart (values of open/high/low/close are shown of each day).
