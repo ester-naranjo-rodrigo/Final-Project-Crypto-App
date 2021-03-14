@@ -9,7 +9,8 @@ This project is a web application where users can access to the following funcio
   - With log in:
     - Profile where users can store and see their investments
     - Detailed charts of each cryptocurrency investment along time
-
+## Cryptocurrency values in Real Time
+[Financial Modeling Prep API](https://financialmodelingprep.com/developer/docs/)
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/home.PNG)
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/historic.PNG)
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/logIn.PNG)
