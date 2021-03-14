@@ -3,11 +3,11 @@
 <h2>Crypto-App Log In 🚀</h2>
 
 <input placeholder="Introduce your username" [(ngModel)]="username" (click)="getUsers()">
-<input placeholder="Introduce your password" [(ngModel)]="password">
+<input type="password" placeholder="Introduce your password" [(ngModel)]="password">
 <button class="btn btn-dark my-3" (click)="signIn()">Log In</button>
 
 
-<p *ngIf="flag === false">Incorret username or password, please try again</p>
+<p class="alert alert-danger" role="alert" *ngIf="flag === false">Incorrect username or password, please try again</p>
 
 <p> Don't have an account? Register 
     <a [routerLink]="['/portfolio/register']">here</a>!🤑
