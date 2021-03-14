@@ -1,7 +1,14 @@
-<p>portfolio-investment-details works!</p>
-<input [(ngModel)]="name">
-<input [(ngModel)]="username">
-<input [(ngModel)]="password">
-<input [(ngModel)]="country">
-<button (click)="updateUser(name, username, password, country)">Edit</button>
-<button (click)="goBack()">Go back</button>
+<main class="mt-5 pt-5">
+    <div class="border border-dark p-3">
+        <h2>📝 Account settings</h2>
+        <div class="line">
+            <p>Name: </p>
+            <input [(ngModel)]="name">
+        </div>
+        <input [(ngModel)]="username">
+        <input [(ngModel)]="password">
+        <input [(ngModel)]="country">
+        <button class="btn btn-warning my-3" (click)="updateUser(name, username, password, country)">Edit</button>
+        <button class="btn btn-dark my-3" (click)="goBack()">Go back</button>
+    </div>
+</main>

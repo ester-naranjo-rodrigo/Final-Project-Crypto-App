@@ -1,39 +1,44 @@
-<h3> 👋 Welcome, {{user.name}}</h3>
-<section>
-<h4> ⚙️ Account Info</h4>
-
-<button class="btn btn-dark my-3" (click)='editUser()'>Edit User</button>
-<button class="btn btn-danger my-3" (click)='deleteUser()'>Delete User</button>
-</section>
-
-<h4> ✏️ Create new investment</h4>
-<div>
-    <input placeholder="Introduce quantity" [(ngModel)]="quantity">
-    <select [(ngModel)]="coin">
-        <option disabled value="">Select coin</option>
-        <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
-    </select>
-    <input (click)="getDate()" type="date" min={{mindate}} max={{maxdate}} [(ngModel)]="dateInvestment">
-    <button class="btn btn-dark my-3" (click)="createInvestment(quantity, coin, dateInvestment)">Create new investment</button>
-</div>
-
-<h4> 📊 Investment details</h4>
+<div class="contenedor px-3 pb-5">
+    <h3> 👋 Welcome, {{user.name}}</h3>
+    <hr>
+    <section class="section-info">
+        <h4> ⚙️ Account Info</h4>
+        <button class="btn btn-dark my-3" (click)='editUser()'>Edit User</button>
+        <button class="btn btn-danger my-3" (click)='deleteUser()'>Delete User</button>
+    </section>
+    <hr>
+    <h4> ✏️ Create new investment</h4>
+    <div class="new-investment">
+        <input placeholder="Introduce quantity" [(ngModel)]="quantity">
+        <select class="form-select" [(ngModel)]="coin">
+            <option disabled value="">Select coin</option>
+            <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
+        </select>
+        <input (click)="getDate()" type="date" min={{mindate}} max={{maxdate}} [(ngModel)]="dateInvestment">
+        <button class="btn btn-dark my-3" (click)="createInvestment(quantity, coin, dateInvestment)">Create new
+            investment</button>
+    </div>
+    <hr>
+    <h4> 📊 Investment details</h4>
 
     <div (function)="getInvestments()" *ngFor="let investmentCoin of investmentCoinsUnique">
         <main class="mt-2 pt-2">
             <div class="caja border border-dark p-3 shadow-sm">
-            <section>
-        <h3>{{investmentCoin}} 📈</h3>
-        <button class="btn btn-warning my-3" (click)='showChart(investmentCoin)'>Show Chart</button>
-            </section>
-            <div *ngFor="let investment of investments">
-                <section *ngIf="investment.coin == investmentCoin">
-                <p><span class="badge rounded-pill bg-success">{{investment.quantity}} - {{investment.coin}} - {{investment.dateInvestment}}</span></p>
-                <button class="btn btn-dark my-3" (click)='editInvestment(investment.id)'>Edit Investment</button>
-                <button class="btn btn-danger my-3" (click)='deleteInvestment(investment.id)'>Delete Investment</button>
+                <section>
+                    <h3>{{investmentCoin}} 📈</h3>
+                    <button class="btn btn-warning my-3" (click)='showChart(investmentCoin)'>Show Chart</button>
                 </section>
+                <div *ngFor="let investment of investments">
+                    <section *ngIf="investment.coin == investmentCoin">
+                        <p>Quantity: <span class="badge rounded-pill bg-success me-2">{{investment.quantity}} {{investment.coin}}</span> Date: <span class="badge rounded-pill bg-primary">
+                                {{investment.dateInvestment}}</span></p>
+                        <button class="btn btn-dark my-3" (click)='editInvestment(investment.id)'>Edit
+                            Investment</button>
+                        <button class="btn btn-danger my-3" (click)='deleteInvestment(investment.id)'>Delete
+                            Investment</button>
+                    </section>
+                </div>
             </div>
+        </main>
     </div>
-    </main>
 </div>
-

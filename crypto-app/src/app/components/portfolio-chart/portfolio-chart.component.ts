@@ -36,6 +36,7 @@ export class PortfolioChartComponent implements OnInit {
   year: number = 0;
   month: number = 0;
   day: number = 0;
+  currency: string = String(this.activatedRoute.snapshot.paramMap.get('currency'));
   
 
   constructor(
@@ -116,7 +117,7 @@ export class PortfolioChartComponent implements OnInit {
               zoomType: 'x'
             },
             title: {
-              text: 'USD to EUR exchange rate from 2006 through 2008'
+              text: 'Your investment progress in ' + currency
             },
             subtitle: {
               text: document.ontouchstart === undefined ?
@@ -129,11 +130,11 @@ export class PortfolioChartComponent implements OnInit {
             },
             yAxis: {          
                title:{
-                text: 'Exchange rate'
+                text: 'USD'
                } 
             },
             tooltip: {
-               valueSuffix:" °C"
+               valueSuffix:" $"
             },
             plotOptions : {
                area: {
@@ -151,7 +152,7 @@ export class PortfolioChartComponent implements OnInit {
             },
             series:[{
                type: 'area',
-               name: 'Your historical progress',
+               name: 'Your wallet value in USD',
                pointInterval: 24 * 3600 * 1000,
                pointStart: Date.UTC(this.year,this.month,this.day),
                data: this.graphQuotes
