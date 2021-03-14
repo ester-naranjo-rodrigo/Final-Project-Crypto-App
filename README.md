@@ -15,11 +15,15 @@ For this first version of the project, I have chosen 12 cryptocurrencies but fut
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/home.PNG)
 
 ## Historic set of values  
-You can access to historic values choosing the period you want and displaying it in a candlestick chart (values of open/high/low/close are shown of each day).
+You can access to historic values choosing the period you want and displaying it in a candlestick chart (values of open/high/low/close are shown of each day). Users can access to this seccion clicking in the cryptocurrency they want in "Home".
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/historic.PNG)
 
+## Log In 
+Users can access to their account or create their an account if they have not any:
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/logIn.PNG)
+
+
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfolio.PNG)
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
