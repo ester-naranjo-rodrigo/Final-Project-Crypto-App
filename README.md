@@ -3,7 +3,7 @@
 This project is a web application where users can access to the following funcionalities:
   - Without log in:
     - Current values of cryptocurrencies
-    - Historic chart and values of cryptocurrencies
+    - Historic charts and values of cryptocurrencies
     - Currency converter
     
   - With log in:
