@@ -1,8 +1,21 @@
-<p>portfolio-investment-details works!</p>
-<input [(ngModel)]="quantity">
-<select [(ngModel)]="coin">
-    <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
-</select>
-<input type="date" [(ngModel)]="dateInvestment">
-<button (click)="updateInvestment(quantity, coin, dateInvestment)">Edit</button>
-<button (click)="goBack()">Go back</button>
+<main class="mt-5 pt-5">
+    <div class="border border-dark p-3">
+        <h2>📝 Account settings</h2>
+        <div class="line">
+            <p class="me-2"><strong>Quantity:</strong></p>
+            <input [(ngModel)]="quantity">
+        </div>
+        <div class="line">
+            <p class="me-2"><strong>Coin:</strong></p>
+            <select [(ngModel)]="coin">
+                <option [value]="item" *ngFor="let item of currenciesSymbolList">{{item}}</option>
+            </select>
+        </div>
+        <div class="line">
+            <p class="me-2"><strong>Date:</strong></p>
+            <input type="date" [(ngModel)]="dateInvestment">
+        </div>
+        <button class="btn btn-warning my-3" (click)="updateInvestment(quantity, coin, dateInvestment)">Edit</button>
+        <button class="btn btn-dark my-3" (click)="goBack()">Go back</button>
+    </div>
+</main>

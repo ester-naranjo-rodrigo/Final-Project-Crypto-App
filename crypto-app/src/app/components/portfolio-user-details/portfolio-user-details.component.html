@@ -2,12 +2,21 @@
     <div class="border border-dark p-3">
         <h2>📝 Account settings</h2>
         <div class="line">
-            <p>Name: </p>
+            <p class="me-2"><strong>Name:</strong></p>
             <input [(ngModel)]="name">
         </div>
-        <input [(ngModel)]="username">
-        <input [(ngModel)]="password">
-        <input [(ngModel)]="country">
+        <div class="line">
+            <p class="me-2"><strong>Username:</strong></p>
+            <input [(ngModel)]="username">
+        </div>
+        <div class="line">
+            <p class="me-2"><strong>Password:</strong></p>
+            <input [(ngModel)]="password">
+        </div>
+        <div class="line">
+            <p class="me-2"><strong>Country:</strong></p>
+            <input [(ngModel)]="country">
+        </div>
         <button class="btn btn-warning my-3" (click)="updateUser(name, username, password, country)">Edit</button>
         <button class="btn btn-dark my-3" (click)="goBack()">Go back</button>
     </div>

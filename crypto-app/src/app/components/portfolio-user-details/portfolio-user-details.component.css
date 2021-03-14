@@ -13,4 +13,13 @@ main *{
 .line {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+}
+
+.line input {
+    width: 200px;
+}
+
+.line p {
+    width: 100px;
 }

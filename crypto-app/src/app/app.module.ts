@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { PortfolioUserDetailsComponent } from './components/portfolio-user-details/portfolio-user-details.component';
 import { PortfolioInvestmentDetailsComponent } from './components/portfolio-investment-details/portfolio-investment-details.component';
 import { PortfolioChartComponent } from './components/portfolio-chart/portfolio-chart.component';
+import { FootComponent } from './components/foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PortfolioChartComponent } from './components/portfolio-chart/portfolio-
     PortfolioUserDetailsComponent,
     PortfolioInvestmentDetailsComponent,
     PortfolioChartComponent,
+    FootComponent,
     
   ],
   imports: [

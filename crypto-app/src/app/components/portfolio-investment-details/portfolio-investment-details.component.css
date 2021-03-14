@@ -1,0 +1,25 @@
+main, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+main *{
+    margin-top: 1rem;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.line input, .line select {
+    width: 200px;
+}
+
+.line p {
+    width: 100px;
+}

@@ -1,15 +1,16 @@
 .active {
-   background-color: rgb(255, 255, 255); 
+   background-color: #FFFFFF; 
+   color: #212529;
    border: none;
    outline: 0;
 }
 
 .nav-bar {
-   background-color: rgb(123, 122, 122);
+   background-color: #212529;
    height: 60px;
    display: flex;
    align-items: flex-end;
-   
+   color: #FFFFFF;
 }
 
 .nav-bar-item {
