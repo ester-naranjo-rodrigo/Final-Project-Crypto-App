@@ -30,7 +30,7 @@ Users can access, manage and add easily their investments, the app store and upd
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfolio.PNG)
 
 ## Detailed Investments charts
-Users can obtain all the investment detailed by cryptocurrency and represented in a chart where they can zoom and display diary data inspecting the chart.
+Users can obtain all their investment detailed by cryptocurrency and represented along time in a chart where they can zoom and display diary data.
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
 
