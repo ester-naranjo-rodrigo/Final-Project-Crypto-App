@@ -34,5 +34,7 @@ Users can see
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/portfoliochart.PNG)
 
+## Exchange util
+Currency converter to calculate live currency values:
 
 ![alt text](https://github.com/ester-naranjo-rodrigo/Final-Project-Crypto-App/blob/main/img/exchange.PNG)
